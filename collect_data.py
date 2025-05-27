@@ -34,7 +34,7 @@ def load_and_split_sentences(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
         sentences = f.readlines()
     qas = []
-    for c, item in enumerate(sentences[0:3500]):
+    for c, item in enumerate(sentences[0:10000]):
         input_text = f"generate question: {item}"
         generated_question = qg_pipeline(input_text, max_length=512, do_sample=False)[0]['generated_text']
         print(f'{c} -> /n {generated_question}/n {item}')
