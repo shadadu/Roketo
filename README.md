@@ -4,4 +4,7 @@ Rocketry LLM: Fine tune a pretrained Q&A LLM Model for Rocket Engineering Q&A. F
 In cases such as the Arxiv rocketry papers which don't come with questions paired to answers, we use a question-generating LLM to generate questions paired with paragraphs as answers and thus obtain Q&A data set. 
 
 This is a chat bot to support study and research in rocket and space engineering.
+
+Datasets and models are pushed to Hugging Face hub: https://huggingface.co/shaddie
+
  
